@@ -4,9 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Nota;
+use App\Models\User;
 
-class NotaSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,9 +15,9 @@ class NotaSeeder extends Seeder
      */
     public function run()
     {
-        Nota::factory()
-        ->count(5)
-        ->create();
         //
+        User::factory()
+            ->count(100)
+            ->create();
     }
 }

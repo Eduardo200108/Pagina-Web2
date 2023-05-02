@@ -17,11 +17,17 @@ class UserFactory extends Factory
      */
     public function definition()
     {
+        $Nomb= fake()->name();
+        $first= explode(' ',$Nomb);
+        $prin = fake()->randomElement(['1807', '1907', '2007', '2107', '2207']);
+        $fina = fake()->unique()->randomNumber(4, true);
+        $control = $prin.$fina;
         return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
+            'name' => $Nomb,
+            'email' => $first[0].'.'.$control."@itsmotul.edu.mx",
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'ControlNumber' => $control,
+            'Ing' => fake()->randomElement(['ISC', 'II', 'IE', 'IEM', 'IER']),
             'remember_token' => Str::random(10),
         ];
     }

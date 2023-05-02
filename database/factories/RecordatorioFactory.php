@@ -7,9 +7,9 @@ use App\Models\User;
 use App\Models\Tema;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Nota>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Recordatorio>
  */
-class NotaFactory extends Factory
+class RecordatorioFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -22,15 +22,11 @@ class NotaFactory extends Factory
         $user = User::inRandomOrder()->first();
         return [
 
+            'importancia'=>fake()->word(),
+            'recordar'=>fake()->word(),
 
-            'titulo'=>fake()->word(),
-            'resumen'=>fake()->word(),
-            'p_clave'=>fake()->word(),
-            'apunte'=>fake()->text(),
             'tema_id' => $tema->id,
             'user_id' => $user->id,
-            
-
             //
         ];
     }

@@ -4,12 +4,11 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\User;
-use App\Models\Tema;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Nota>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Asignatura>
  */
-class NotaFactory extends Factory
+class AsignaturaFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,19 +17,11 @@ class NotaFactory extends Factory
      */
     public function definition()
     {
-        $tema = Tema::inRandomOrder()->first();
         $user = User::inRandomOrder()->first();
         return [
-
-
-            'titulo'=>fake()->word(),
-            'resumen'=>fake()->word(),
-            'p_clave'=>fake()->word(),
-            'apunte'=>fake()->text(),
-            'tema_id' => $tema->id,
+            'name' =>fake()->word(),
             'user_id' => $user->id,
             
-
             //
         ];
     }
