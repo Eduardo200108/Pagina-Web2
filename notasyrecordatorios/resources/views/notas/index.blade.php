@@ -17,16 +17,16 @@
                         <div class="w-full flex flex-wrap p-16 mx-auto justify-center bg-gray-300">
                             @foreach ($notas as $nota)
                                 <div
-                                    class="max-w-sm bg-violet-700 overflow-hidden shadow-lg text-center mx-1 my-4 text-white">
+                                    class="max-w-sm bg-cyan-700 overflow-hidden shadow-lg text-center mx-1 my-4 text-white">
                                     <div class="px-6 pt-4 border-b-2 w-64">
                                         <div class="font-bold text-xl mt-4">{{ $nota->titulo }}</div>
                                     </div>
-                                    <div class="bg-violet-800 px-6 py-4 h-32 w-64">
+                                    <div class="bg-purple-500 px-6 py-4 h-32 w-64">
                                         <p class="text-base">{{ substr($nota->contenido, 0, 50) }}...</p>
                                     </div>
                                     <div class="flex">
                                         <a href="{{ url('/notas/' . $nota->id) }}"
-                                            class="px-6 py-4 border w-1/2 flex items-center justify-center hover:bg-violet-500 cursor-pointer">
+                                            class="px-6 py-4 border w-1/2 flex items-center justify-center hover:bg-yellow-600 cursor-pointer">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                 stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -36,7 +36,7 @@
                                             </svg>
                                         </a>
                                         <a href="{{ url('/notas/' . $nota->id . '/edit') }}"
-                                            class="px-6 py-4 border w-1/2 flex items-center justify-center hover:bg-violet-500 cursor-pointer">
+                                            class="px-6 py-4 border w-1/2 flex items-center justify-center hover:bg-green-300 cursor-pointer">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                 stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
