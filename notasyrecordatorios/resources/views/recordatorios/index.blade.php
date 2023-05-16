@@ -9,7 +9,7 @@
         title="Add New nota">
         Nuevo
     </a>
-    <div class="flex flex-wrap p-5 mx-20 justify-center bg-gray-300 ">
+    <div class="flex flex-wrap p-5 mx-auto justify-center bg-gray-300 ">
         @foreach ($recordatorios as $recordatorio)
             <div
                 class="max-w-sm bg-violet-700  overflow-hidden shadow-lg text-center mx-4 my-4 text-white relative">

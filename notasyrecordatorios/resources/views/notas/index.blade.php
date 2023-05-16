@@ -14,7 +14,7 @@
                             class="block w-24 text-center uppercase my-4 mx-16 shadow bg-green-800 hover:bg-green-700 focus:shadow-outline focus:outline-none text-white text-xs py-3">
                             Nuevo
                         </a>
-                        <div class="w-full flex flex-wrap p-16 mx-20 justify-center bg-gray-300">
+                        <div class="w-full flex flex-wrap p-16 mx-auto justify-center bg-gray-300">
                             @foreach ($notas as $nota)
                                 <div
                                     class="max-w-sm bg-violet-700 overflow-hidden shadow-lg text-center mx-1 my-4 text-white">
