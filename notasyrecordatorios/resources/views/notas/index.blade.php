@@ -18,8 +18,8 @@
                             @foreach ($notas as $nota)
                                 <div
                                     class="max-w-sm bg-cyan-700 overflow-hidden shadow-lg text-center mx-1 my-4 text-white">
-                                    <div class="px-6 pt-4 border-b-2 w-64">
-                                        <div class="font-bold text-xl mt-4">{{ $nota->titulo }}</div>
+                                    <div class="px-6 pt-4 border-b-2 w-64 overflow-hidden ">
+                                        <div class="font-bold whitespace-nowrap truncate text-xl mt-4 pl-5">{{ $nota->titulo }}</div>
                                     </div>
                                     <div class="bg-purple-800 px-6 py-4 h-32 w-64">
                                         <p class="text-base">{{ substr($nota->contenido, 0, 50) }}...</p>
