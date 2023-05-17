@@ -21,7 +21,7 @@
                                     <div class="px-6 pt-4 border-b-2 w-64">
                                         <div class="font-bold text-xl mt-4">{{ $nota->titulo }}</div>
                                     </div>
-                                    <div class="bg-purple-500 px-6 py-4 h-32 w-64">
+                                    <div class="bg-purple-800 px-6 py-4 h-32 w-64">
                                         <p class="text-base">{{ substr($nota->contenido, 0, 50) }}...</p>
                                     </div>
                                     <div class="flex">

@@ -12,16 +12,16 @@
     <div class="flex flex-wrap p-5 mx-auto justify-center bg-gray-300 ">
         @foreach ($recordatorios as $recordatorio)
             <div
-                class="max-w-sm bg-violet-700  overflow-hidden shadow-lg text-center mx-4 my-4 text-white relative">
+                class="max-w-sm bg-cyan-700  overflow-hidden shadow-lg text-center mx-4 my-4 text-white relative">
                 <div class="px-6 pt-4 border-b-2 ">
                     <div class="font-bold text-xl mt-4">{{ $recordatorio->titulo }}</div>
                 </div>
-                <div class="bg-violet-800 px-6 py-4 border-1">
+                <div class="bg-cyan-500 px-6 py-4 border-1">
                     <p class="text-base">{{ $recordatorio->fecha }}</p>
                 </div>
                 <div class="flex">
                     <a href="{{ url('/recordatorios/' . $recordatorio->id) }}"
-                        class="px-6 py-4 border w-1/2 flex items-center justify-center hover:bg-violet-500 cursor-pointer">
+                        class="px-6 py-4 border w-1/2 flex items-center justify-center hover:bg-amber-500 cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -30,7 +30,7 @@
                         </svg>
                     </a>
                     <a href="{{ url('/recordatorios/' . $recordatorio->id . '/edit') }}"
-                        class="px-6 py-4 border w-1/2 flex items-center justify-center hover:bg-violet-500 cursor-pointer">
+                        class="px-6 py-4 border w-1/2 flex items-center justify-center hover:bg-green-300 cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
