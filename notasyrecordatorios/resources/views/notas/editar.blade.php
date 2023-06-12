@@ -7,12 +7,12 @@
     <div class="card">
         <div class="card-body">
             @if ($errors->any())
-                <div class="bg-red-500 w-96 p-4 mt-2 mb-4 mx-auto text-white  text-center">
+                <div class="bg-blue-500 w-96 p-4 mt-2 mb-4 mx-auto text-white  text-center">
                     <p>{{ $errors->first() }}</p>
                 </div>
             @endif
             <form action="{{ url('notas/' . $nota->id) }}" method="post"
-                class="w-3/4 m-8 mx-auto text-center text-white bg-pink-600 ">
+                class="w-3/4 m-8 mx-auto text-center text-white bg-Green-600 ">
                 {!! csrf_field() !!}
                 @method('PATCH')
                 <div class="text-center">
